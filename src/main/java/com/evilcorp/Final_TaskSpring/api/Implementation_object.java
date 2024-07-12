@@ -8,17 +8,18 @@ import java.util.UUID;
 //Date date = new Date();
 //		System.out.println(formater.format(date));
 
-@Data //Анатация говорит нам что создание конструкторов, "геттеров и сетторов" не требуеться (зависимость Lombok)
+@Data // Анатация говорит нам что создание конструкторов, "геттеров и сетторов" не требуеться (зависимость Lombok)
 
-public class Implementation_object {// Описание класса "Объект внедрения"
+public class Implementation_object { // Описание класса "Объект внедрения"
     private UUID id;
-    private String name; //Наименование объекта внедрения
-    private String railway; //Название железной дороги, ккоторой относиться создаваемый объект внедрения (если есть)
-    private boolean non_public_paths; //Относиться ли объект внедрения к путям необщего пользования
-    private Date create_date; //Дата создания объекта внедрнеия
-    private String tpo_version; //Версия технологичекого программного обесечения
+    private String name; // Наименование объекта внедрения
+    private String railway; // Название железной дороги, ккоторой относиться создаваемый объект внедрения (если есть)
+    private boolean non_public_paths; // Относиться ли объект внедрения к путям необщего пользования
+    private Date create_date; // Дата создания объекта внедрнеия
+    private String tpo_version; // Версия технологичекого программного обесечения
+    private UUID creator_id; // Идентификатор пользователя, создавшего объект внедрения
 
-    public Implementation_object(String name, String railway, String tpo_version) {
+    public Implementation_object(String name, String railway, String tpo_version, UUID creator_id   ) {
         this.id = UUID.randomUUID();
         this.name = name;
         this.create_date = new Date();
@@ -30,5 +31,6 @@ public class Implementation_object {// Описание класса "Объек
             this.railway = null;
         }
         this.tpo_version = tpo_version;
+        this.creator_id = creator_id;
     }
 }
