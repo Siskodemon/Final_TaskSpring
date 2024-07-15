@@ -4,12 +4,7 @@ import lombok.Data;
 import java.util.Date;
 import java.util.UUID;
 
-//SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//Date date = new Date();
-//		System.out.println(formater.format(date));
-
 @Data // Анатация говорит нам что создание конструкторов, "геттеров и сетторов" не требуеться (зависимость Lombok)
-
 public class Implementation_object { // Описание класса "Объект внедрения"
     private UUID id;
     private String name; // Наименование объекта внедрения

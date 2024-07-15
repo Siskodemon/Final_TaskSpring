@@ -15,8 +15,8 @@ public class Distribution_transfer_procedure { // Класс "Процедура
     private UUID procedure_id; // Идентификатор процедуры
     private UUID creator_id; // Идентификатор пользователя, создавшего процедуру передачи дистрибутива
     private Implementation_object implementation_object; // Объект внедрения, передаваемый по этой процедуре
-    private Distribution_builder distribution_builder; // Специалист осуществляющий передачу указанного дистрибутива для установки на объекте внедрения
-    private Serviceman serviceman; // Специалист, получивший дистрибутив для установки ПО на объекте внедрения
+    private UUID distribution_builder; // Идентификатор специалист, осуществляющего передачу указанного дистрибутива для установки на объекте внедрения
+    private UUID serviceman; // Идентификатор специалист, получивший дистрибутив для установки ПО на объекте внедрения
     private Date change_time;  // Дата и время внесения последнего изменения в процедуре
     private Status status; //
     private String comments;
