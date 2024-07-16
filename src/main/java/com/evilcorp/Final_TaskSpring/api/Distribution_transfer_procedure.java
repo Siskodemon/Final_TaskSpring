@@ -19,7 +19,7 @@ public class Distribution_transfer_procedure { // Класс "Процедура
     private UUID serviceman; // Идентификатор специалист, получивший дистрибутив для установки ПО на объекте внедрения
     private Date change_time;  // Дата и время внесения последнего изменения в процедуре
     private Status status; //
-    private String comments;
+    private String comments; // Комментарии
 
 
 }

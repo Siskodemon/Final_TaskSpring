@@ -22,7 +22,7 @@ public class UserRepository {
     }
 
     public  User save(User user){ // Метод, сохраняющий нового пользователя
-        if (user.getId() == null){ // Если в переданом оюъекте пользователя ID не задано, то мы сначало его генерируем и только потом сохраняем
+        if (user.getId() == null){ // Если в переданом оъекте пользователя ID не задано, то мы сначало его генерируем и только потом сохраняем
             user.setId(UUID.randomUUID());
         }
         users.put(user.getId(), user);

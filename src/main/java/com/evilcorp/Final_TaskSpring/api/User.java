@@ -14,7 +14,7 @@ public class User { // Класс пользователя
     private String firstname; // Имя пользователя
     private String soname; // Отчество пользователя
     private Date create_date;
-    private String role;
+    private String role; // роль
 
     public User(String lastname, String firstname,String soname, String role){
         this.lastname = lastname;
