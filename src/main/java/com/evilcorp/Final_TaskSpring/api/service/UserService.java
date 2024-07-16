@@ -1,10 +1,9 @@
-package com.evilcorp.Final_TaskSpring.api;
+package com.evilcorp.Final_TaskSpring.api.service;
 
+import com.evilcorp.Final_TaskSpring.api.User;
+import com.evilcorp.Final_TaskSpring.api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Date;
-import java.util.UUID;
 
 @Service
 public class UserService {

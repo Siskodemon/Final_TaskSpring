@@ -1,5 +1,7 @@
-package com.evilcorp.Final_TaskSpring.filework;
+package com.evilcorp.Final_TaskSpring.api.controller;
 
+import com.evilcorp.Final_TaskSpring.api.service.FileService;
+import com.evilcorp.Final_TaskSpring.api.FileEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpHeaders;

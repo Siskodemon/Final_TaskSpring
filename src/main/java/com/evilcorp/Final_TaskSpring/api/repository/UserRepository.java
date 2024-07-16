@@ -1,5 +1,6 @@
-package com.evilcorp.Final_TaskSpring.api;
+package com.evilcorp.Final_TaskSpring.api.repository;
 
+import com.evilcorp.Final_TaskSpring.api.User;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class UserRepository {
-    private final Map<UUID,User> users = new ConcurrentHashMap<>();
+    private final Map<UUID, User> users = new ConcurrentHashMap<>();
 
     public List<User> findAll(){ // Метод, возвращающий всех сохранённых пользователей
         return new ArrayList<>(users.values());

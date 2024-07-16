@@ -1,4 +1,4 @@
-package com.evilcorp.Final_TaskSpring.filework;
+package com.evilcorp.Final_TaskSpring.api;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

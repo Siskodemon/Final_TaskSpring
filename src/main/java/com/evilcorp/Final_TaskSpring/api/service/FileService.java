@@ -1,5 +1,7 @@
-package com.evilcorp.Final_TaskSpring.filework;
+package com.evilcorp.Final_TaskSpring.api.service;
 
+import com.evilcorp.Final_TaskSpring.api.FileEntity;
+import com.evilcorp.Final_TaskSpring.api.repository.FileRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

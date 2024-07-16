@@ -1,5 +1,6 @@
-package com.evilcorp.Final_TaskSpring.filework;
+package com.evilcorp.Final_TaskSpring.api.repository;
 
+import com.evilcorp.Final_TaskSpring.api.FileEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;
